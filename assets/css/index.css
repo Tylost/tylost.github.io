@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/static/imgs/background/homepage.jpg'); /* Substitua pela URL da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    filter: brightness(0.8); /* Ajuste para escurecer a imagem de fundo */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-left {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-left a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.profile-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.profile-dropdown:hover .profile-dropdown-content {
+    display: block;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.content {
+    flex: 3;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.post a{
+    color:black;
+    
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.profile-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px; /* Torna o dropdown mais arredondado */
+    z-index: 1;
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+.profile_option {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os ícones com o texto */
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.profile_option:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Efeito hover */
+}
+
+.profile_option i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    color: #007bff;
+}
+
+.profile_option:hover i {
+    color: #e02828; /* Altere para a cor desejada no hover */
+}
+
+.profile_picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.sidebar_titles i {
+    margin-right: 8px;
+}
+
+.sidebar_text {
+    font-size: 22px;
+}
+
+.sidebar_text i {
+    margin-right: 8px;
+}
